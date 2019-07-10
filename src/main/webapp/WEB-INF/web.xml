@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginPage</servlet-name>
+  	<display-name>LoginPage</display-name>
+  	<description></description>
+  	<servlet-class>com.tara.servlet.LoginPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogOut</servlet-name>
+  	<display-name>LogOut</display-name>
+  	<description></description>
+  	<servlet-class>com.tara.servlet.LogOut</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddToCart</servlet-name>
+  	<display-name>AddToCart</display-name>
+  	<description></description>
+  	<servlet-class>com.tara.servlet.AddToCart</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CheckOut</servlet-name>
+  	<display-name>CheckOut</display-name>
+  	<description></description>
+  	<servlet-class>com.tara.servlet.CheckOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginPage</servlet-name>
+  	<url-pattern>/LoginPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogOut</servlet-name>
+  	<url-pattern>/LogOut</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddToCart</servlet-name>
+  	<url-pattern>/AddToCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CheckOut</servlet-name>
+  	<url-pattern>/CheckOut</url-pattern>
+  </servlet-mapping>
+</web-app>

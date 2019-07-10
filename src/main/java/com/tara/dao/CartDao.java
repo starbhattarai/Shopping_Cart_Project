@@ -99,7 +99,7 @@ public class CartDao {
 					int itemQuantity=rs.getInt("itemQuantity");
 					itemdao.decreseItem(itemId, itemQuantity);
 			}
-			st.executeQuery("delete from Cart");
+			st.executeUpdate("delete from Cart");
 		}catch(Exception e){
 			System.out.println(e);
 		}finally {

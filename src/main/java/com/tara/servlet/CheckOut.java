@@ -33,7 +33,7 @@ public class CheckOut extends HttpServlet {
 		
 		CartDao cartdao = new CartDao();
 		cartdao.checkOutAllCartItem();
-		RequestDispatcher dispatcher = request.getRequestDispatcher("item.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		if(dispatcher!=null) {
 			dispatcher.forward(request, response);
 		}
